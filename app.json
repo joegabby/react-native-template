@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ogla-mobile",
-    "slug": "ogla-mobile",
+    "name": "app-name",
+    "slug": "app-slug",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/images/icon.png",

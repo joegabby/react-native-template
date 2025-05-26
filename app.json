@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-name",
-    "slug": "app-slug",
+    "name": "inecpress",
+    "slug": "inecpress",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/images/icon.png",

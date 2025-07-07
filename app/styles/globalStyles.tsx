@@ -6,5 +6,6 @@ export const globalContainer = StyleSheet.create({
         flex:1,
         position:'relative',
         padding: 20,
+        backgroundColor:'white'
     }
 });

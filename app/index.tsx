@@ -4,17 +4,17 @@ import { useFonts } from 'expo-font';
 import { View,Text,SafeAreaView, StatusBar } from 'react-native';
 import StackNav from './navigators/stackNavigator';
 // import StackNav from './navigators/stackNavigation';
-import OnboardingStack from './navigators/onboardNavigator';
 SplashScreen.preventAutoHideAsync(); // Keep the splash screen visible while we fetch resources
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
   const [fontsLoaded] = useFonts({
-    Niramit_Bold: require('./assets/fonts/Niramit-Bold.ttf'),
-    Niramit_SemiBold: require('./assets/fonts/Niramit-SemiBold.ttf'),
-    Niramit_Light: require('./assets/fonts/Niramit-Light.ttf'),
-    Niramit_Medium: require('./assets/fonts/Niramit-Medium.ttf'),
-    Niramit_Regular: require('./assets/fonts/Niramit-Regular.ttf'),
+    Poppins_Regular: require('./assets/fonts/Poppins-Regular.ttf'),
+    Poppins_Bold: require('./assets/fonts/Poppins-Bold.ttf'),
+    Poppins_Italic: require('./assets/fonts/Poppins-Italic.ttf'),
+    Poppins_SemiBold: require('./assets/fonts/Poppins-SemiBold.ttf'),
+    Poppins_Medium: require('./assets/fonts/Poppins-Medium.ttf'),
+    Poppins_BoldItalic: require('./assets/fonts/Poppins-BoldItalic.ttf'),
   });
 
   useEffect(() => {
@@ -39,8 +39,7 @@ export default function App() {
   return ( 
     <SafeAreaView className='flex-1'>
       <StatusBar barStyle="dark-content" translucent/>
-      {/* <StackNav/> */}
-      <OnboardingStack/>
+      <StackNav/>
     </SafeAreaView>
   );
 }

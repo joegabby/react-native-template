@@ -7,11 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Niramit_Bold: ['Niramit_Bold'],
-        Niramit_SemiBold:['Niramit_SemiBold'],
-        Niramit_Light: ['Niramit_Light'],
-        Niramit_Medium: ['Niramit_Medium'],
-        Niramit_Regular:['Niramit_Regular'],
+        poppins_regular: ['Poppins_Regular'],
+        poppins_bold: ['Poppins_Bold'],
+        poppins_italic: ['Poppins_Italic'],
+        poppins_semiBold: ['Poppins_SemiBold'],
+        poppins_Medium: ['Poppins_Medium'],
+        Poppins_BoldItalic: ['Poppins_BoldItalic'],
       },
       colors:{
         p_blue:'#002966',

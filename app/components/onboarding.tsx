@@ -15,9 +15,10 @@ type StepData = {
 type Props = {
   steps: StepData[];
   onFinish: () => void;
+  isChild : boolean
 };
 
-export default function OnboardingStepper({ steps, onFinish }: Props) {
+export default function OnboardingStepper({ steps, onFinish,isChild }: Props) {
   const [currentStep, setCurrentStep] = useState(0);
   const stepData = steps[currentStep];
   const isLast = stepData.isLast || currentStep === steps.length - 1;
@@ -35,7 +36,7 @@ export default function OnboardingStepper({ steps, onFinish }: Props) {
             </View>
             <View className="flex-row justify-end items-center">
                 <TouchableOpacity onPress={onFinish} className="flex-row justify-end items-center mt-[20px]">
-                    <Text className="text-[16px] text-p_blue font-Niramit_Regular mr-[5px]">Skip</Text>
+                    <Text className="text-[16px] text-p_blue font-Niramit_Regular mr-[5px]">{isChild ? "Close":"Skip"}</Text>
                     <Ionicons name="close" size={20} color="#002966" />
                 </TouchableOpacity>
             </View>

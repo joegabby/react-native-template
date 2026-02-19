@@ -65,7 +65,7 @@ export default function AvailablePositions() {
                 <TouchableOpacity className={`p-[10px] ${AvailablePositions ? 'bg-[#45A27D]' : 'bg-[#45A27D80]'} rounded-full mr-[5px]`} onPress={()=>{handleTabs("Available Positions"), navigation.navigate("AvailablePositions")}}>
                     <Text className="text-white text-[12px] leading-[24px] font-Niramit_Medium font-[400]">Available Positions</Text>
                 </TouchableOpacity>
-                <TouchableOpacity className={`p-[10px] ${ApplicationSteps ? 'bg-[#45A27D]' : 'bg-[#45A27D80]'} rounded-full mr-[5px]`} onPress={()=>{handleTabs("How To Apply"),navigation.navigate("OnboardingScreen")}}>
+                <TouchableOpacity className={`p-[10px] ${ApplicationSteps ? 'bg-[#45A27D]' : 'bg-[#45A27D80]'} rounded-full mr-[5px]`} onPress={()=>{handleTabs("How To Apply"),navigation.navigate("OnboardingScreen",{child:true})}}>
                     <Text className="text-white text-[12px] leading-[24px] font-Niramit_Medium font-[400]">How To Apply</Text>
                 </TouchableOpacity>
                 <TouchableOpacity className={`p-[10px] ${ContactUs ? 'bg-[#45A27D]' : 'bg-[#45A27D80]'} rounded-full mr-[5px]`} onPress={()=>{handleTabs("Contact Us")}}>

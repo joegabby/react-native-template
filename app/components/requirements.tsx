@@ -1,8 +1,9 @@
 import React from "react";
 import { FlatList, Text,TouchableOpacity,View } from "react-native";
 import Requirements from "./enums/applicantsRequirements";
-
+import { useNavigation } from "@react-navigation/native";
 export default function RequirementsCard(){
+    const navigation = useNavigation<any>();
     return(
         <View className="flex-1">
             <View>
@@ -30,7 +31,7 @@ export default function RequirementsCard(){
                                 </View>                   
                             )}                    
                         />
-                        <TouchableOpacity className="bg-[#215346] w-full justify-center items-center py-[10px] rounded-[6px]">
+                        <TouchableOpacity onPress={()=>navigation.navigate("Forms")} className="bg-[#215346] w-full justify-center items-center py-[10px] rounded-[6px]">
                             <Text className="text-white font-Niramit_SemiBold text-[12px] leading-[18px]">Apply Now</Text>
                         </TouchableOpacity>
                     </View>

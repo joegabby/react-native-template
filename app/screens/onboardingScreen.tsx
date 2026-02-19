@@ -64,13 +64,15 @@ const onboardingData = [
     },
   ];
 
-export default function OnboardingScreen() {
+export default function OnboardingScreen({ route }:any) {
   const navigation = useNavigation<any>();
+  const child = route?.params?.child ?? false;
 
   return (
     <SafeAreaView style={globalContainer.container} className="flex-1">
       <OnboardingStepper
         steps={onboardingData}
+        isChild={child}
         onFinish={() =>
           navigation.reset({
             index: 0,
